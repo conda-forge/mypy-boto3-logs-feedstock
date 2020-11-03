@@ -11,15 +11,15 @@ source:
 
 build:
   number: 0
-  noarch: python >=3
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3
   run:
-    - python
+    - python >=3
     - typing_extensions
     - botocore
 
