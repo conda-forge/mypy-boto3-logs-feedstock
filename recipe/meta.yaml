@@ -1,5 +1,5 @@
 {% set name = "mypy-boto3-logs" %}
-{% set version = "1.16.6.0" %}
+{% set version = "1.16.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 94d9c4cd12251dfc6f0c46144faba8361d4c0ea57f7bd98e26d884d0a720bb6d
+  sha256: 28e204ba59461ac25bca215964ecd4dfd1dadf9111c6d31ace4f5285d3625cb2
 
 build:
   number: 0
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3
   run:
-    - python
+    - python >=3
     - typing_extensions
     - botocore
 
