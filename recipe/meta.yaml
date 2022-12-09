@@ -1,5 +1,5 @@
 {% set name = "mypy-boto3-logs" %}
-{% set version = "1.26.17" %}
+{% set version = "1.26.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 55fef4095001bb8eac7532c9b9e162e7cbbb1d5d6fe68b9ca925cf19f9649df4
+  sha256: f460c59ec8c47e7a651e185567681781283a3d1d7302637d7ba211a9b888726b
 
 build:
   number: 0
